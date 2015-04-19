@@ -20,7 +20,7 @@ var locating = function(){
   		});
 
   		if(theibeacon != null){
-  			pos = IBeacons.find({ibeaconid:theibeacon.deviceAddress}).fetch()[0];
+  			pos = Positions.find({ibeaconid:theibeacon.deviceAddress}).fetch()[0];
   			Session.set("posFound",true);
   		}else{
   			Session.set("posNotFound",true);

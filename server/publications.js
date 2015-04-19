@@ -1,3 +1,3 @@
-Meteor.publish('ibeacons', function() {
-  return IBeacons.find();
+Meteor.publish('positions', function() {
+  return Positions.find();
 });
