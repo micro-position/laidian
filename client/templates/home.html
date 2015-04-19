@@ -1,3 +1,14 @@
 <template name="home">
-  asdfasdf
+  {{#if posFound}}
+  	定位成功，您在：{{pos.position}}
+  {{/if}}
+
+  {{#if posNotFound}}
+  	定位失败
+  	<a class="relocate" href="#">再试一次</a>
+  {{/if}}
+
+  {{#if locating}}
+  	定位中...
+  {{/if}}
 </template>
